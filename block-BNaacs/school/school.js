@@ -44,7 +44,7 @@ app.get(`/students/:id`, (req, res) => {
     Student.findById(req.params.id, (err, obj)  => {
         if(err) console.log(err)
         res.render("index.ejs", {
-            student: { name: "rahul", email: "rahul@altcampus.io" },
+            student: { name: "rahul", age: 20 },
           });
     })
     
