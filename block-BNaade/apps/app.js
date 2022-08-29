@@ -22,7 +22,10 @@ app.set("views", path.join(__dirname, "views"))
 
 //models
 
-
+app.use((req, res, next) => {
+    console.log(req.url, req.method)
+    next()
+})
 
 app.use(`/users`, userRouter)
 
