@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/users/<%= user.id %>" method="post">
+    <form action="/users/<%= user._id %>" method="post">
         <input type="text" name="name" id="name" value="<%= user.name%>">
         <input type="number" name="age" id="age" value="<%= user.age%>">
         <input type="email" name="email" id="email" value="<%= user.email%>">
